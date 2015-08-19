@@ -16,6 +16,7 @@
     '(
       ;; package names go here
       wakatime-mode
+      exec-path-from-shell
       ))
 
 (setq adulteratedjedi-excluded-packages '())
@@ -29,4 +30,10 @@
     :init
     (progn
       (global-wakatime-mode)))
+  )
+
+(defun adulteratedjedi/init-exec-path-from-shell ()
+  (use-package exec-path-from-shell
+    :init (when (memq window-system '(mac ns x))
+            (exec-path-from-shell-initialize)))
   )
