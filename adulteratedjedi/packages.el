@@ -22,6 +22,10 @@
 
 (defun adulteratedjedi/init-wakatime-mode ()
   (use-package wakatime-mode
+    :config
+    (setq wakatime-api-key "a9d3c07c-fa7c-451f-8fa6-cb16e5aa72b5"
+          wakatime-cli-path "/usr/local/bin/wakatime")
+    :diminish wakatime-mode 
     :init
     (progn
       (global-wakatime-mode)))
