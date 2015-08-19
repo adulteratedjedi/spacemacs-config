@@ -15,17 +15,14 @@
 (setq adulteratedjedi-packages
     '(
       ;; package names go here
+      wakatime-mode
       ))
 
-;; List of packages to exclude.
 (setq adulteratedjedi-excluded-packages '())
 
-;; For each package, define a function adulteratedjedi/init-<package-name>
-;;
-;; (defun adulteratedjedi/init-my-package ()
-;;   "Initialize my package"
-;;   )
-;;
-;; Often the body of an initialize function uses `use-package'
-;; For more info on `use-package', see readme:
-;; https://github.com/jwiegley/use-package
+(defun adulteratedjedi/init-wakatime-mode ()
+  (use-package wakatime-mode
+    :init
+    (progn
+      (global-wakatime-mode)))
+  )
