@@ -14,7 +14,6 @@
 ;; which require an initialization must be listed explicitly in the list.
 (setq adulteratedjedi-packages
     '(
-      ;; package names go here
       wakatime-mode
       exec-path-from-shell
       ))
@@ -37,3 +36,4 @@
     :init (when (memq window-system '(mac ns x))
             (exec-path-from-shell-initialize)))
   )
+
