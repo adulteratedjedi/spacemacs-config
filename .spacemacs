@@ -24,6 +24,7 @@
      ;; syntax-checking
      themes-megapack
      version-control
+     adulteratedjedi
      )
    dotspacemacs-additional-packages '(
                                       atom-one-dark-theme)
@@ -139,10 +140,6 @@ before layers configuration."
   "Configuration function.
  This function is called at the very end of Spacemacs initialization after
 layers configuration."
-  (setq
-   user-full-name "Gavin-John Noonan"
-   user-mail-address "gavinjohn.noonan@gmail.com"
-   vc-follow-symlinks t)
   )
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
