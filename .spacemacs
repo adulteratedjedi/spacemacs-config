@@ -13,14 +13,17 @@
      (auto-completion :variables
                       auto-completion-enable-help-tooltip t
                       auto-completion-enable-snippets-in-popup t)
+     chrome
      clojure
      gjn-clojure
      dockerfile
      emacs-lisp
      (git :variables
           git-magit-status-fullscreen t)
+     go
      ;; markdown
-     ;; org
+     (org :variables
+          org-enable-github-support t)
      osx
      (shell :variables
             shell-default-shell 'eshell
